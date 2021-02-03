@@ -28,7 +28,7 @@ export default function Homepage() {
         <Logo src={logo} />
       </LogoAndSiteName>
       <Cartridge>
-        <Title>What is “Hit my brain ?</Title>
+        <Title>What is “Hit my brain" ?</Title>
         <Paragraph>
           This is a quiz game, many categories are available (Cinema, Music, Art
           ...), you can even check your score with your friends. Pretty cool no

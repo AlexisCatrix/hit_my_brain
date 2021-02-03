@@ -8,6 +8,9 @@ export const MainContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  &#signUp {
+    background: linear-gradient(360deg, #92a37d 55%, #ff823b);
+  }
 `;
 
 export const BackIcon = styled(ArrowBack)`
@@ -17,18 +20,22 @@ export const BackIcon = styled(ArrowBack)`
 
 export const Form = styled.form`
   width: 30vw;
-  height: 50vh;
+  height: 45vh;
   background: #e2764e;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   margin: 3em;
   box-shadow: 4px 4px 12px #5d5147;
+  &#signUp {
+    height: 50vh;
+  }
 `;
 
 export const LabelAndInput = styled.div`
   width: 20vw;
-  height: 30vh;
+  height: min-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,9 +45,12 @@ export const LabelAndInput = styled.div`
 
 export const Label = styled.label`
   font-size: 1.25em;
-  margin: 1.5em 0;
+  margin: 1em 0;
+  &#firstLabel {
+    margin-top: 0;
+  }
 `;
 
 export const Input = styled.input`
-width: 18vw;
+  width: 18vw;
 `;

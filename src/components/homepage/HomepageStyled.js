@@ -62,6 +62,7 @@ export const Cartridge = styled.div`
   align-items: center;
   margin: 3em;
   box-shadow: 4px 4px 12px #5d5147;
+  border-radius: 20px;
 `;
 
 export const Title = styled.h1`
@@ -90,8 +91,18 @@ export const Button = styled.button`
   font-size: 1.25em;
   text-shadow: 4px 4px 5px black;
   box-shadow: 4px 4px 5px black;
+  border-radius: 15px;
   margin: 1.5em;
   &#submit {
     margin-bottom: 3em;
+    margin-top: 0;
   }
+`;
+
+export const Span = styled.span`
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  width: inherit;
+  font-size: 1.25em;
+  margin-bottom: 1em;
 `;
