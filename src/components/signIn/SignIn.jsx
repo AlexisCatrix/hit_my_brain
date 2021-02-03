@@ -14,10 +14,11 @@ import {
   SiteName,
   LogoAndSiteName,
   Logo,
+  Span,
 } from "../../components/homepage/HomepageStyled";
 import logo from "../../assets/pictures/logo_hitMyBrain.png";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <MainContent>
       <Header>
@@ -35,12 +36,11 @@ export default function SignIn() {
       </LogoAndSiteName>
       <Form>
         <LabelAndInput>
-          <Label>Nickname </Label>
+          <Span>Nice to see you again ! Ready to warm up your brain ?</Span>
+          <Label id="firstLabel">Nickname / e-mail </Label>
           <Input type="text" name="username" />
-          <Label>E-mail</Label>
-          <Input type="text" name="email" />
           <Label>Password</Label>
-          <Input type="text" name="password" />
+          <Input type="password" name="password" />
         </LabelAndInput>
       </Form>
       <Link to="/:username">
