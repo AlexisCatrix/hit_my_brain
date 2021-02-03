@@ -37,7 +37,7 @@ export const Logo = styled.img`
   background: linear-gradient(
     90deg,
     rgba(84, 203, 169, 0.6) 50%,
-    rgba(0, 0, 0, 0.1) 20%
+    rgba(218, 64, 64, 0.8) 20%
   );
   border: 1px solid white;
   padding: 0.5em;
@@ -49,6 +49,8 @@ export const LogoAndSiteName = styled.div`
   width: auto;
   display: flex;
   align-items: center;
+  border: 2px solid black;
+  border-radius: 0 15px 15px 0;
 `;
 
 export const Cartridge = styled.div`
@@ -73,11 +75,11 @@ export const Paragraph = styled.p`
   font-size: 1.5em;
   color: black;
   text-shadow: 2px 2px 2px #5d5147;
-  padding: 1em;
+  padding: 0.5em;
   line-height: 1.5em;
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   width: 10vw;
   height: 6.5vh;
   background: #cf582c;
@@ -85,7 +87,11 @@ export const Button = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 1.25em;
   text-shadow: 4px 4px 5px black;
   box-shadow: 4px 4px 5px black;
   margin: 1.5em;
+  &#submit {
+    margin-bottom: 3em;
+  }
 `;
