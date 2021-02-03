@@ -37,7 +37,7 @@ export default function SignIn() {
         <LabelAndInput>
           <Label>Nickname </Label>
           <Input type="text" name="username" />
-          <Label>E_mail</Label>
+          <Label>E-mail</Label>
           <Input type="text" name="email" />
           <Label>Password</Label>
           <Input type="text" name="password" />
