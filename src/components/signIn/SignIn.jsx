@@ -35,8 +35,10 @@ export default function SignIn() {
       </LogoAndSiteName>
       <Form>
         <LabelAndInput>
-          <Label>Nickname / e-mail</Label>
+          <Label>Nickname </Label>
           <Input type="text" name="username" />
+          <Label>E_mail</Label>
+          <Input type="text" name="email" />
           <Label>Password</Label>
           <Input type="text" name="password" />
         </LabelAndInput>

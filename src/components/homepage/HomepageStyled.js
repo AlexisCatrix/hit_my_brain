@@ -62,6 +62,7 @@ export const Cartridge = styled.div`
   align-items: center;
   margin: 3em;
   box-shadow: 4px 4px 12px #5d5147;
+  border-radius: 20px;
 `;
 
 export const Title = styled.h1`
@@ -93,5 +94,6 @@ export const Button = styled.button`
   margin: 1.5em;
   &#submit {
     margin-bottom: 3em;
+    margin-top: 0;
   }
 `;
