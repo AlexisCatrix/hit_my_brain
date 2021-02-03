@@ -35,7 +35,9 @@ export default function Homepage() {
           ;) ? So sign up and have fun!
         </Paragraph>
       </Cartridge>
-      <Button id="signUp">Sign up</Button>
+      <Link to="/SignUp">
+        <Button id="submit">Sign up</Button>
+      </Link>
     </MainContent>
   );
 }
