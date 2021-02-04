@@ -53,4 +53,18 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   width: 18vw;
+  &#submit {
+    width: 10vw;
+    height: 6.5vh;
+    background: #cf582c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25em;
+    text-shadow: 4px 4px 5px black;
+    box-shadow: 4px 4px 5px black;
+    border-radius: 15px;
+    margin: 1.5em;
+  }
 `;
