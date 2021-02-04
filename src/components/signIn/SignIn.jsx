@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { notifyWarnBeforeSubmit } from "../../assets/notifications/Notification.js";
 import { Link } from "react-router-dom";
 import {
   MainContent,
@@ -18,7 +21,23 @@ import {
 } from "../../components/homepage/HomepageStyled";
 import logo from "../../assets/pictures/logo_hitMyBrain.png";
 
-export default function SignUp() {
+export default function SignUp({ username, setUsername }) {
+  const [password, setPassword] = useState("");
+
+  const handleChangeName = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handleChangePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (username === "" || password === "") {
+      notifyWarnBeforeSubmit();
+    }
+  };
   return (
     <MainContent>
       <Header>
@@ -34,18 +53,34 @@ export default function SignUp() {
           <Logo src={logo} />
         </Link>
       </LogoAndSiteName>
-      <Form>
+      <Form
+        id="signUp"
+        onSubmit={(e) => {
+          handleSubmit(e);
+        }}
+      >
         <LabelAndInput>
           <Span>Nice to see you again ! Ready to warm up your brain ?</Span>
-          <Label id="firstLabel">Nickname / e-mail </Label>
-          <Input type="text" name="username" />
+          <Label id="firstLabel">Nickname </Label>
+          <Input
+            type="text"
+            name="username"
+            value={username}
+            onChange={handleChangeName}
+          />
           <Label>Password</Label>
-          <Input type="password" name="password" />
+          <Input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChangePassword}
+          />
         </LabelAndInput>
       </Form>
-      <Link to="/:username">
+      <Link to={`/user-profile/${username}`}>
         <Button id="submit">GO QUIZ !</Button>
       </Link>
+      <ToastContainer />
     </MainContent>
   );
 }
