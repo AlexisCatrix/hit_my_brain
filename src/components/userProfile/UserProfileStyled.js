@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const Header = styled.div`
   width: inherit;
   height: 20vh;
-  background: linear-gradient(
-    rgba(129, 216, 162, 0.5),
-    rgba(255, 255, 255, 0.5)
-  );
+  background: linear-gradient(#2e9e6a, #da4040);
   display: flex;
   align-items: center;
 `;
@@ -23,7 +20,7 @@ export const WelcomeMessage = styled.h1`
   padding-bottom: 2vh;
 `;
 
-export const UserName = styled.h1`
+export const UserName = styled.span`
   font-size: 1.5em;
   color: #da4040;
   text-shadow: 4px 4px 2px black;
