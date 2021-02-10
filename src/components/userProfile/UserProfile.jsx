@@ -18,6 +18,8 @@ import {
 import logo from "../../assets/pictures/logo_hitMyBrain.png";
 
 export default function UserProfile({ username }) {
+
+
   return (
     <MainContent>
       <Header>
@@ -30,12 +32,12 @@ export default function UserProfile({ username }) {
             <SignOut>Sign out</SignOut>
           </Link>
           <WelcomeMessage>
-            Nice to meet up you again <UserName>{username} </UserName>!
+            Nice to meet you again <UserName>{username} </UserName>!
           </WelcomeMessage>
         </ContentRightHeader>
       </Header>
       <PlayCategories>
-        <Link to="/quizz/movie">
+        <Link to="/quizz/level">
           <Category id="movie">Movie</Category>
         </Link>
         <Link to="/quizz/music">
